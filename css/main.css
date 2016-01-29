@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'akkurat';
+  src: url("Akkurat-Mono.ttf"); }
+
+@font-face {
+  font-family: 'amaticSC';
+  src: url("AmaticSC-Regular.ttf"); }
+
+@font-face {
+  font-family: 'amaticSC';
+  src: url("AmaticSC-Bold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'openSans';
+  src: url("OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: 'openSans';
+  src: url("OpenSans-Regular.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'openSans';
+  src: url("OpenSans-LightItalic.ttf");
+  font-style: italic; }
+
+.fixed-bgtest {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .fixed-bgtest h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30%; }
+
+.fixed-bg, .bg-versailles {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .fixed-bg h1, .bg-versailles h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30%; }
+
+.bg-scrolling-bg {
+  min-height: 100%; }
+
+.bg-versailles {
+  background-image: url("../img/versailles.jpg"); }
+
+.bg-hightide {
+  background-image: url("../img/miyajima/hightide.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 66.71717%;
+  position: relative; }
+  @media only screen and (min-aspect-ratio: 1980 / 1321) {
+    .bg-hightide {
+      background-size: cover; } }
+  .bg-hightide div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px gray; }
+    .bg-hightide div h1 {
+      padding-left: 25%; }
+
+.bg-lowtide {
+  background-image: url("../img/miyajima/lowtide.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  position: relative; }
+  @media only screen and (min-aspect-ratio: 1980 / 1485) {
+    .bg-lowtide {
+      background-size: cover; } }
+  .bg-lowtide div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px gray; }
+    .bg-lowtide div h1 {
+      padding-left: 25%; }
+
+.bg-shibuya {
+  background-image: url("../img/shibuya.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  background-attachment: fixed; }
+  @media only screen and (min-aspect-ratio: 1920 / 1080) {
+    .bg-shibuya {
+      background-size: cover; } }
+  .bg-shibuya div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px gray; }
+    .bg-shibuya div h1 {
+      padding-left: 25%; }
+
+img, embed, object, video {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #7F7F7F; }
+  a:hover {
+    color: #000000; }
+
+body, html, main {
+  height: 100%; }
+
+body {
+  line-height: 1.6875;
+  font-family: 'openSans'; }
+  @media only screen and (max-width: 700px) {
+    body {
+      font-size: 90%; } }
+  @media only screen and (min-width: 701px) and (max-width: 1199px) {
+    body {
+      font-size: 100%; } }
+  @media only screen and (min-width: 1200px) {
+    body {
+      font-size: 120%; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'amaticSC'; }
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 180%; } }
+
+@media only screen and (min-width: 701px) and (max-width: 1199px) {
+  h1 {
+    font-size: 190%; } }
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 210%; } }
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 160%; } }
+
+@media only screen and (min-width: 701px) and (max-width: 1199px) {
+  h2 {
+    font-size: 170%; } }
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 190%; } }
+
+p {
+  max-width: 960px;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+p:first-child ~ p {
+  padding-top: 3%; }
+
+.content {
+  padding-top: 5%;
+  padding-bottom: 7%; }
+
+i {
+  font-style: italic; }
