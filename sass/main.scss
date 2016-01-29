@@ -57,14 +57,9 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   @include respond-to(sm) {
-    font-size:180%;
+    font-size:250%;
   }
-  @include respond-to(md) {
-    font-size:190%
-  }
-  @include respond-to(lg) {
     font-size:210%;
-  }
 }
 
 h2 {
