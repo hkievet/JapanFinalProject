@@ -26,6 +26,7 @@ img, embed, object, video{
 a {
   text-decoration: none;
   color : $light-gray;
+  target-new:tab;
   &:hover { 
     color: $black;
   }
@@ -75,20 +76,33 @@ h2 {
 }
 
 p {
-  max-width: 960px;
-    padding-left: 10%;
-    padding-right: 10%;
+  margin: 0 auto;
 }
 
-p:first-child ~p{
+p:first-child ~ p,.p-img-right{
   padding-top: 3%;
 }
 
 .content {
   padding-top: 5%;
   padding-bottom:7%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 i {
   font-style:italic;
+}
+
+.p-img-right{
+  display: inline-block;
+  img{
+    float:right;
+    width: $golden-small;
+    max-width: 200px;
+    padding-left: 3%;
+    padding-bottom: 5px;
+    padding-top: 0;
+  }
+
 }

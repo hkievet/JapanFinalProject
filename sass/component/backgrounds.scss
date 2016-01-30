@@ -1,4 +1,4 @@
-@mixin div-same-size-as-background-img-fixed($url, $width, $height) { 
+@mixin div-same-size-as-background-img-fixed($url, $width, $height, $opacity:.5) { 
 	background-image: url($url); 
 	background-size: contain; 
 	background-repeat: no-repeat; 
@@ -18,7 +18,13 @@
 	div{
 		position:absolute; left:0; right:0; bottom:0;
 	  padding: 5px;
-	 	background: rgba(255, 255, 255, 0.5);
+    @if $opacity>.7 {    
+    	 	background: rgba(0, 0, 0, 1-$opacity);
+    	 	color: white;
+	  }
+	  @else {
+		 	background: rgba(255, 255, 255, $opacity);
+	  }
 	  box-shadow: 0 0 5px gray;
 	  h1{
 	    padding-left: 25%;
@@ -26,7 +32,7 @@
 	}
 }
 
-@mixin div-same-size-as-background-img($url, $width, $height) { 
+@mixin div-same-size-as-background-img($url, $width, $height, $opacity:.5) { 
 	background-image: url($url); 
 	background-size: contain; 
 	background-repeat: no-repeat; 
@@ -44,8 +50,15 @@
 	div{
 		position:absolute; left:0; right:0; bottom:0;
 	  padding: 5px;
-	 	background: rgba(255, 255, 255, 0.5);
-	  box-shadow: 0 0 5px gray;
+
+    @if $opacity>.7 {    
+    	 	background: rgba(0, 0, 0, 1-$opacity);
+    	 	color: white;
+	  }
+	  @else {
+		  box-shadow: 0 0 5px gray;
+		 	background: rgba(255, 255, 255, $opacity);
+	  }
 	  h1{
 	    padding-left: 25%;
 	  }
@@ -63,20 +76,31 @@
 
 .bg-hightide {
 	//1920 × 1281
-	@include div-same-size-as-background-img("../img/miyajima/hightide.jpg", 1920, 1281);
+	@include div-same-size-as-background-img("../img/miyajima/hightide.jpg", 1920, 1281, .71);
 }
 
 .bg-lowtide {
 	//1920x1440
-  @include div-same-size-as-background-img("../img/miyajima/lowtide.jpg", 1920, 1440);
+  @include div-same-size-as-background-img("../img/miyajima/lowtide.jpg", 1920, 1440, .71);
 }
 
 .bg-shibuya {
 	//1920 x 1080
-  @include div-same-size-as-background-img-fixed("../img/shibuya.jpg", 1920, 1080);
+  @include div-same-size-as-background-img-fixed("../img/shibuya.jpg", 1920, 1080, .8);
 }
 
 .bg-markvi {
 	//1920 x 1082
-  @include div-same-size-as-background-img("../img/mark6.jpg", 1920, 1082);
+  @include div-same-size-as-background-img("../img/mark6.jpg", 1920, 1082, .65);
+}
+
+.bg-bridge {
+	//1920 x 1200
+  @include div-same-size-as-background-img("../img/bridge.jpg", 1920, 1200, .71);
+}
+
+
+.bg-meiji {
+	//1920 × 975 pixel
+  @include div-same-size-as-background-img("../img/meiji.jpg", 1920, 975, .8);
 }
