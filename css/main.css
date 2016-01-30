@@ -213,7 +213,7 @@ body, html, main {
 body {
   line-height: 1.6875;
   font-family: 'openSans'; }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
     body {
       font-size: 90%; } }
   @media only screen and (min-width: 701px) and (max-width: 1199px) {
@@ -228,11 +228,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 210%; }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
     h1 {
-      font-size: 250%; } }
+      font-size: 450%; } }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px), only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
   h2 {
     font-size: 160%; } }
 
@@ -259,12 +259,10 @@ p:first-child ~ p, .p-img-right {
 i {
   font-style: italic; }
 
-.p-img-right {
-  display: inline-block; }
-  .p-img-right img {
-    float: right;
-    width: 38.2%;
-    max-width: 200px;
-    padding-left: 3%;
-    padding-bottom: 5px;
-    padding-top: 0; }
+.p-img-right img {
+  float: right;
+  width: 38.2%;
+  max-width: 200px;
+  padding-left: 3%;
+  padding-bottom: 5px;
+  padding-top: 0; }
