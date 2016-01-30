@@ -57,34 +57,6 @@ table {
   src: url("OpenSans-LightItalic.ttf");
   font-style: italic; }
 
-.fixed-bgtest {
-  min-height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center; }
-  .fixed-bgtest h1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 30%; }
-
-.fixed-bg, .bg-versailles {
-  min-height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center; }
-  .fixed-bg h1, .bg-versailles h1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 30%; }
-
 .bg-scrolling-bg {
   min-height: 100%; }
 
@@ -97,9 +69,9 @@ table {
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-top: 66.71717%;
+  padding-top: 66.71875%;
   position: relative; }
-  @media only screen and (min-aspect-ratio: 1980 / 1321) {
+  @media only screen and (min-aspect-ratio: 1920 / 1281) {
     .bg-hightide {
       background-size: cover; } }
   .bg-hightide div {
@@ -108,8 +80,8 @@ table {
     right: 0;
     bottom: 0;
     padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 5px gray; }
+    background: rgba(0, 0, 0, 0.29);
+    color: white; }
     .bg-hightide div h1 {
       padding-left: 25%; }
 
@@ -121,7 +93,7 @@ table {
   height: 0;
   padding-top: 75%;
   position: relative; }
-  @media only screen and (min-aspect-ratio: 1980 / 1485) {
+  @media only screen and (min-aspect-ratio: 1920 / 1440) {
     .bg-lowtide {
       background-size: cover; } }
   .bg-lowtide div {
@@ -130,8 +102,8 @@ table {
     right: 0;
     bottom: 0;
     padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 5px gray; }
+    background: rgba(0, 0, 0, 0.29);
+    color: white; }
     .bg-lowtide div h1 {
       padding-left: 25%; }
 
@@ -153,9 +125,76 @@ table {
     right: 0;
     bottom: 0;
     padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
     box-shadow: 0 0 5px gray; }
     .bg-shibuya div h1 {
+      padding-left: 25%; }
+
+.bg-markvi {
+  background-image: url("../img/mark6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 56.35417%;
+  position: relative; }
+  @media only screen and (min-aspect-ratio: 1920 / 1082) {
+    .bg-markvi {
+      background-size: cover; } }
+  .bg-markvi div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    box-shadow: 0 0 5px gray;
+    background: rgba(255, 255, 255, 0.65); }
+    .bg-markvi div h1 {
+      padding-left: 25%; }
+
+.bg-bridge {
+  background-image: url("../img/bridge.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 62.5%;
+  position: relative; }
+  @media only screen and (min-aspect-ratio: 1920 / 1200) {
+    .bg-bridge {
+      background-size: cover; } }
+  .bg-bridge div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.29);
+    color: white; }
+    .bg-bridge div h1 {
+      padding-left: 25%; }
+
+.bg-meiji {
+  background-image: url("../img/meiji.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 50.78125%;
+  position: relative; }
+  @media only screen and (min-aspect-ratio: 1920 / 975) {
+    .bg-meiji {
+      background-size: cover; } }
+  .bg-meiji div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white; }
+    .bg-meiji div h1 {
       padding-left: 25%; }
 
 img, embed, object, video {
@@ -163,7 +202,8 @@ img, embed, object, video {
 
 a {
   text-decoration: none;
-  color: #7F7F7F; }
+  color: #7F7F7F;
+  target-new: tab; }
   a:hover {
     color: #000000; }
 
@@ -186,17 +226,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'amaticSC'; }
 
-@media only screen and (max-width: 700px) {
-  h1 {
-    font-size: 180%; } }
-
-@media only screen and (min-width: 701px) and (max-width: 1199px) {
-  h1 {
-    font-size: 190%; } }
-
-@media only screen and (min-width: 1200px) {
-  h1 {
-    font-size: 210%; } }
+h1 {
+  font-size: 210%; }
+  @media only screen and (max-width: 700px) {
+    h1 {
+      font-size: 250%; } }
 
 @media only screen and (max-width: 700px) {
   h2 {
@@ -211,16 +245,26 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 190%; } }
 
 p {
-  max-width: 960px;
-  padding-left: 10%;
-  padding-right: 10%; }
+  margin: 0 auto; }
 
-p:first-child ~ p {
+p:first-child ~ p, .p-img-right {
   padding-top: 3%; }
 
 .content {
   padding-top: 5%;
-  padding-bottom: 7%; }
+  padding-bottom: 7%;
+  padding-left: 10%;
+  padding-right: 10%; }
 
 i {
   font-style: italic; }
+
+.p-img-right {
+  display: inline-block; }
+  .p-img-right img {
+    float: right;
+    width: 38.2%;
+    max-width: 200px;
+    padding-left: 3%;
+    padding-bottom: 5px;
+    padding-top: 0; }
